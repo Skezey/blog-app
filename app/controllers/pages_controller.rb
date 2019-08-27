@@ -28,7 +28,9 @@ class PagesController < ApplicationController
     end
   end
 
+  # edit form
   def edit
+    @page = Page.find(params[:id])
   end
 
   private
