@@ -1,2 +1,8 @@
-<h1>From the index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<h1>Blog Pages</h1>
+<% @pages.each do |page| %>
+  <%= link_to 'show page', page_path(page) %>
+<% end %>
+
+
+<!-- <%  %>  non echoing tag does not display on page -->
+<!-- <%=  %> echoing tag displays something -->
